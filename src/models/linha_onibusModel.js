@@ -7,9 +7,9 @@ import conn from "../config/conn.js"
 const tableLinhaOnibus = /*sql*/ `
     CREATE TABLE IF NOT EXISTS linhaOnibus(
         id_linha INT PRIMARY KEY not null,
-        nome_linha VARCHAR(255) not null,
+        nome_linha varchar(255) not null,
         numero_linha INT not null,
-        intinerario VARCHAR(255) not null
+        intinerario varchar(255) not null
     );
 `;
 
