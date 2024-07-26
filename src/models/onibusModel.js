@@ -8,8 +8,10 @@ const tableOnibus = /*sql*/ `
         ano_fabricacao int not null,
         capacidade int not null,
         id_linha int not null,
-        
-        foreign key(id_linha) references motorista(id_motorista)
+        id_motorista int not null,
+
+        foreign key(id_linha) references linhaOnibus(id_linha),
+        foreign key(id_motorista) references motorista(id_motorista)
     );
 `;
 

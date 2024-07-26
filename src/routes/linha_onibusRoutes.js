@@ -10,8 +10,8 @@ import {
 const router = Router()
 
 router.get("/", getLinha)
-router.get("/:id", getLinhaid)
+router.get("/:id_linha", getLinhaid)
 router.post("/criar", postLinha)
-router.put("/editar/:id", putLinhaid)
+router.put("/editar/:id_linha", putLinhaid)
 
 export default router
